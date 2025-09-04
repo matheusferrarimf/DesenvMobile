@@ -1,0 +1,62 @@
+:root{
+  --primary:#506EE0;
+  --bg:#ffffff;
+  --text:#222;
+  --muted:#666;
+}
+*{box-sizing:border-box}
+html,body{margin:0;padding:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Ubuntu,'Helvetica Neue',Arial,'Noto Sans',sans-serif;background:var(--bg);color:var(--text)}
+header{border-bottom:1px solid #eee; background:#fff; position:sticky; top:0; z-index:10}
+.container{max-width:1200px;margin:0 auto;padding:0 16px}
+.topbar{display:grid;grid-template-columns:140px 1fr 40px;align-items:center;gap:16px;padding:12px 0}
+.logo{display:flex;align-items:center;gap:8px}
+.logo-circle{width:48px;height:48px;border-radius:50%;background:conic-gradient(from 0deg, #59c, #8c5, #fb5, #e55, #59c)}
+.logo-title{font-weight:800}
+.search{display:flex;align-items:center;border:1px solid #ddd;border-radius:999px;padding:8px 12px}
+.search input{border:none;outline:none;width:100%;font-size:14px}
+.icon{width:24px;height:24px;display:inline-block;opacity:.6}
+nav{border-top:1px solid #f2f2f2}
+nav ul{display:flex;gap:24px;list-style:none;margin:0;padding:10px 0}
+nav a{text-decoration:none;color:var(--text);font-weight:600}
+nav a:hover{color:var(--primary)}
+
+#hamburger{display:none;background:none;border:none;padding:4px}
+.hamburger-bars{width:26px;height:2px;background:#333;box-shadow:0 7px 0 #333,0 -7px 0 #333;border-radius:1px}
+
+.hero{background:#f3f6ff;padding:48px 0;border-bottom:1px solid #eaeaea}
+.hero .banner{height:220px;display:grid;place-items:center;background:linear-gradient(135deg,#e4ecff,#fdfbfb);border:1px dashed #d0d7ff;border-radius:16px;color:var(--primary);font-size:42px;font-weight:900;letter-spacing:.06em}
+
+.grid{display:grid;grid-template-columns:repeat(4,1fr);gap:20px;padding:28px 0}
+.card{border:1px solid #eee;border-radius:14px;overflow:hidden;background:#fff;display:flex;flex-direction:column;transition:transform .15s ease, box-shadow .15s ease}
+.card:hover{transform:translateY(-2px);box-shadow:0 6px 24px rgba(0,0,0,.06)}
+.card img{display:block;width:100%;height:180px;object-fit:cover;background:#ddd}
+.card .content{padding:12px 14px}
+.card h3{margin:2px 0 6px;font-size:18px}
+.card p{margin:0;color:var(--muted);font-size:13px;line-height:1.35}
+.card .price{margin-top:10px;font-weight:800;color:var(--primary)}
+
+footer{background:#5f6368;color:#fff;margin-top:32px}
+footer .container{display:grid;grid-template-columns:2fr 1fr 1fr;gap:16px;padding:18px 16px;align-items:center}
+footer .brand{opacity:.95}
+footer .phone{justify-self:center;font-weight:700}
+footer .dots{justify-self:end;display:flex;gap:8px}
+footer .dots span{width:22px;height:22px;background:#8a8f97;border-radius:4px;display:inline-block}
+
+@media (max-width:1024px){
+  .grid{grid-template-columns:repeat(3,1fr)}
+}
+@media (max-width:768px){
+  .topbar{grid-template-columns:40px 1fr 40px}
+  .logo{display:none}
+  #hamburger{display:block}
+  nav ul{display:none;flex-direction:column;gap:12px;padding:10px 8px}
+  nav ul.open{display:flex}
+  .hero .banner{height:140px;font-size:28px}
+  .grid{grid-template-columns:repeat(2,1fr)}
+  footer .container{grid-template-columns:1fr;gap:8px}
+  footer .phone{justify-self:start}
+  footer .dots{justify-self:start}
+}
+@media (max-width:420px){
+  .grid{grid-template-columns:1fr}
+}
