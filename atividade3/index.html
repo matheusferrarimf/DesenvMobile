@@ -1,0 +1,209 @@
+<!doctype html>
+<html lang="pt-br">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>NETIFRIXI — Catálogo de Filmes (Flexbox + PWA)</title>
+  <meta name="theme-color" content="#e50914">
+  <link rel="manifest" href="manifest.webmanifest">
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+<header>
+  <div class="container topbar">
+    <div class="brand">
+      <div class="logo" aria-hidden="true"></div>
+      <strong>NETIFRIXI</strong>
+    </div>
+    <div class="search" role="search">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" aria-hidden="true">
+        <circle cx="11" cy="11" r="8"></circle><line x1="21" y1="21" x2="16.65" y2="16.65"></line>
+      </svg>
+      <input type="search" placeholder="Buscar filmes..." aria-label="Buscar filmes">
+    </div>
+    <nav aria-label="Principal">
+      <button id="hamburger" aria-label="Abrir menu" aria-expanded="false"><span></span></button>
+      <div class="links">
+        <a href="#catalogo">Catálogo</a>
+        <a href="#sobre">Sobre</a>
+        <a href="#contato">Contato</a>
+      </div>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="hero">
+    <div class="container">
+      <div class="banner">BANNER — NETIFRIXI</div>
+    </div>
+  </section>
+
+  <section id="catalogo" class="section">
+    <div class="container">
+      <div class="row">
+        
+      <article class="card">
+        <img class="poster" src="assets/poster-01.png" alt="Poster filme 01" loading="lazy">
+        <div class="content">
+          <h3>Filme 01 — Título Falso</h3>
+          <div class="meta">
+            <span class="tag">Drama</span>
+            <span class="tag">2022</span>
+            <span class="rating">★ 6.7</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card">
+        <img class="poster" src="assets/poster-02.png" alt="Poster filme 02" loading="lazy">
+        <div class="content">
+          <h3>Filme 02 — Título Falso</h3>
+          <div class="meta">
+            <span class="tag">Comédia</span>
+            <span class="tag">2023</span>
+            <span class="rating">★ 7.4</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card">
+        <img class="poster" src="assets/poster-03.png" alt="Poster filme 03" loading="lazy">
+        <div class="content">
+          <h3>Filme 03 — Título Falso</h3>
+          <div class="meta">
+            <span class="tag">Sci‑Fi</span>
+            <span class="tag">2024</span>
+            <span class="rating">★ 8.1</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card">
+        <img class="poster" src="assets/poster-04.png" alt="Poster filme 04" loading="lazy">
+        <div class="content">
+          <h3>Filme 04 — Título Falso</h3>
+          <div class="meta">
+            <span class="tag">Terror</span>
+            <span class="tag">2021</span>
+            <span class="rating">★ 8.8</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card">
+        <img class="poster" src="assets/poster-05.png" alt="Poster filme 05" loading="lazy">
+        <div class="content">
+          <h3>Filme 05 — Título Falso</h3>
+          <div class="meta">
+            <span class="tag">Ação</span>
+            <span class="tag">2022</span>
+            <span class="rating">★ 6.0</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card">
+        <img class="poster" src="assets/poster-06.png" alt="Poster filme 06" loading="lazy">
+        <div class="content">
+          <h3>Filme 06 — Título Falso</h3>
+          <div class="meta">
+            <span class="tag">Drama</span>
+            <span class="tag">2023</span>
+            <span class="rating">★ 6.7</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card">
+        <img class="poster" src="assets/poster-07.png" alt="Poster filme 07" loading="lazy">
+        <div class="content">
+          <h3>Filme 07 — Título Falso</h3>
+          <div class="meta">
+            <span class="tag">Comédia</span>
+            <span class="tag">2024</span>
+            <span class="rating">★ 7.4</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card">
+        <img class="poster" src="assets/poster-08.png" alt="Poster filme 08" loading="lazy">
+        <div class="content">
+          <h3>Filme 08 — Título Falso</h3>
+          <div class="meta">
+            <span class="tag">Sci‑Fi</span>
+            <span class="tag">2021</span>
+            <span class="rating">★ 8.1</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card">
+        <img class="poster" src="assets/poster-09.png" alt="Poster filme 09" loading="lazy">
+        <div class="content">
+          <h3>Filme 09 — Título Falso</h3>
+          <div class="meta">
+            <span class="tag">Terror</span>
+            <span class="tag">2022</span>
+            <span class="rating">★ 8.8</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card">
+        <img class="poster" src="assets/poster-10.png" alt="Poster filme 10" loading="lazy">
+        <div class="content">
+          <h3>Filme 10 — Título Falso</h3>
+          <div class="meta">
+            <span class="tag">Ação</span>
+            <span class="tag">2023</span>
+            <span class="rating">★ 6.0</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card">
+        <img class="poster" src="assets/poster-11.png" alt="Poster filme 11" loading="lazy">
+        <div class="content">
+          <h3>Filme 11 — Título Falso</h3>
+          <div class="meta">
+            <span class="tag">Drama</span>
+            <span class="tag">2024</span>
+            <span class="rating">★ 6.7</span>
+          </div>
+        </div>
+      </article>
+    
+      <article class="card">
+        <img class="poster" src="assets/poster-12.png" alt="Poster filme 12" loading="lazy">
+        <div class="content">
+          <h3>Filme 12 — Título Falso</h3>
+          <div class="meta">
+            <span class="tag">Comédia</span>
+            <span class="tag">2021</span>
+            <span class="rating">★ 7.4</span>
+          </div>
+        </div>
+      </article>
+    
+      </div>
+    </div>
+  </section>
+
+  <section id="sobre" class="container section">
+    <h2>Sobre</h2>
+    <p>Este catálogo fictício foi criado para a atividade de Website Responsivo utilizando <strong>Flexbox</strong> e PWA. As imagens são apenas ilustrativas.</p>
+  </section>
+</main>
+
+<footer>
+  <div class="container wrap">
+    <div>© 2025 NETIFRIXI — Projeto acadêmico</div>
+    <div class="footer-dots"><span></span><span></span><span></span></div>
+  </div>
+</footer>
+
+<script src="app.js"></script>
+</body>
+</html>
